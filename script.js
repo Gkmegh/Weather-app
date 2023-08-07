@@ -34,15 +34,25 @@ const apiKey = 'fe21c3ed35281d0904acc45ed5966fc1';
       <div class="card-temp">
         <h2> ${Math.round( data.main.temp)}°</h2>
         <img src="${iconUrl}" alt="${data.weather[0].description}" width="50">
+      </div>
+      <div class="card-temphigh">
+        <div class="bottomcard">
+          <div class="temphl">      
+            <p>H:${Math.round(data.main.temp_max)}°</p>
+            <p>L: ${Math.round(data.main.temp_min)}°</p>
+          </div>
+          <div class="country">
+            <p>${data.name}, ${data.sys.country}</p>
+          </div>
         </div>
-        <div class="card-temp">
-        <p>H:${Math.round(data.main.temp_max)}°</p>
-        <p>L: ${Math.round(data.main.temp_min)}°</p>
-        </div>
-        <div class="card-bottom">
-        <p>${data.name}, ${data.sys.country}</p>
+        
+        <div id="weather">
         <p> ${data.weather[0].main}</p>
         </div>
+        
+        </div>
+
+      
       `;
 
       weatherCards.appendChild(card);
