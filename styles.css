@@ -5,24 +5,21 @@ body {
     background-color: #2C3056;
   }
 
-  h1{
+h1{
     height: 52px;
     margin-top: 45px;
     margin-left: 449px;
     font-weight: 700;
     font-size: 48px;
     color: #fff;
-    
-}
+  }
 .searchbtn{
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* border: 1px solid wheat; */
   gap: 80px;
 }
   #cityInput{
-    /* flex-grow: 1; */
     width: 596px;
     height: 66px;
     top: 144px;
@@ -40,7 +37,6 @@ body {
     width: 188px;
     height: 70px;
     top: 144px;
-    /* margin-left: 931px; */
     border-radius: 10px;
     padding: 5px 10px;
     background: #4A397FB2;
@@ -67,49 +63,91 @@ body {
     margin-bottom: 20px;
   }
   
+#weatherCards{
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
   .weather-card img {
     
-    width: 80px;
-    height: 120px;
+    width: 120px;
+    height: 200px;
   }
   
  
   .weather-card {
-        
-        margin: 10px;
-        /* display: inline-block; */
+        display: inline-block;
         vertical-align: top;
         box-sizing: border-box;
-      }
-      .weather-card {
         color: #fff;
         background: linear-gradient(90deg, #5936B4 0%, #362A84 103.55%);
-        padding: 15px;
         margin-bottom: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         border-radius: 15px;
-        padding: 10px;
-        margin: 10px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        display: flex;
-        justify-content: space-between;
-        
-        vertical-align: top;
-        width: calc(33.33% - 20px);
-        box-sizing: border-box;
+        padding: 25px;
+        margin: 30px;
+        align-items: center;
         width: 338px;
         height: 185px;
+        margin-top: 80px;
+        padding-top: 10px;
       }
  h2{
-    font-size:30px; 
+    font-size: 64px; 
     font-weight: 400;
     margin-left: 20px; 
 }
 .card-temp{
+    margin-top:0px;
     display: flex;
-    justify-content: flex-start;
-    align-self: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+   
 }
+.card-temp img{
+  margin-top: 0px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.card-temphigh{
+  /* border: solid 1px red; */
+    font-weight: 400;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.temphl{
+  /* border: solid 2px blueviolet; */
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  font-size: 10px;
+  font-style: italic;
+
+}
+
+.country{
+  /* border: solid 1px red; */
+  margin-top: 0px;
+}
+
+.bottomcard{
+  margin: 0px;
+  padding: 0px;
+  font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+
 
   
   @media screen and (max-width: 600px) {
